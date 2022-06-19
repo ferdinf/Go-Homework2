@@ -6,6 +6,8 @@ import (
 	"os"
 )
 
+var Config Configuration
+
 func GetConfig() Configuration {
 	configuration := Configuration{}
 	err := gonfig.GetConf(getFileName(), &configuration)
